@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Comfortaa", cursive;
+}
+
+nav img {
+  max-width: 40px;
+}
+
+.card-group {
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.card-group:hover {
+  transform: scale(1.08);
+}
+.card-group .btn{
+    transition: all 1s;
+}
+ .card-group:hover .btn{
+    background-color: rgba(0, 0, 255, 0.2);
+ }
+
+ .card-body{
+    height: 15rem;
+ }
