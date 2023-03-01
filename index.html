@@ -9,13 +9,16 @@
             href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Nunito+Sans:ital,wght@1,800&family=Poppins:wght@400;500&family=Roboto&family=Source+Sans+Pro&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
+        <div class="loading">Loading&#8230;</div>
         <header>
-            <img src="./images/wraper.png" alt="">
+            <img src="./images/wraper.png" class="w-100" alt="">
         </header>
-        <nav class="navbar navbar-expand-lg navbar-dark translate-middle-y" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark translate-middle-y"
+            id="nav">
             <div class="container bg-primary rounded-3 py-2 px-5">
                 <a class="navbar-brand"> <img src="./images/logo-sm.png" alt="">
                     Game Reviews</a>
@@ -27,23 +30,23 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                        <li class="nav-item" data-code="mmorpg">
                             <a class="nav-link active" aria-current="page"
                                 href="#">MMORBG</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-code="shooter">
                             <a class="nav-link" href="#">SHOOTER</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-code="sailing">
                             <a class="nav-link" href="#">SAILING</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-code="permadeath">
                             <a class="nav-link" href="#">permadeath</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-code="superhero">
                             <a class="nav-link" href="#">SUPERHERO</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-code="pixel">
                             <a class="nav-link" href="#">PIXEL</a>
                         </li>
 
@@ -52,206 +55,14 @@
             </div>
         </nav>
         <div class="container">
-            <div class="row g-5" id="displayDate">
-                <!-- <div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card-group">
-                        <div class="card bg-transparent">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between mb-5">
-                                    <h5 class="card-title">Card title</h5>
-                                    <span class="btn btn-primary">FREE</span>
-                                </div>
-
-                                <p class="card-text mb-5">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little
-                                    bit
-                                    longer.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span class="btn btn-secondary">MMOARPG</span>
-                                <span class="btn btn-secondary">PC (DOWNLOAD)</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> -->
-
-            </div>
+            <div class="row g-5" id="displayDate"></div>
+        </div>
+        <div class="w-100 bg-dark text-white-50" id="showDetails">
+            <a href=""></a>
         </div>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/jquery-3.6.3.min.js"></script>
         <script src="./js/index.js"></script>
+        <!-- <script src="./js/api.js" type="module"></script> -->
     </body>
 </html>
